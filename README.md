@@ -6,5 +6,5 @@
 
 ## Results
 <div align="center">
-    <img src="imgs/results.png" width="500" />
+    <img src="imgs/results.png" width="100%" />
 </div>
