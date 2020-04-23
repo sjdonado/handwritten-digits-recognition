@@ -2,25 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Handwritten digits recognition</title>
     <link rel="stylesheet" type="text/css" href="assets/index.css">
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
     <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
     <script src="assets/predictor.js"></script>
     <script src="assets/drawer.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
   <body>
     <h1>Handwritten digits recognition</h1>
-    <h5>Test accuracy: 0.9872</h5>
     <div class="wrapper">
       <canvas id="paint"></canvas>
       <span id="prediction">-</span>
       <button id="clear-btn">Clear canvas</button>
       <ol>
         <li>Hint: Double tap to clear the canvas</li>
-        <li>Hint: Draw slowly (on desktop)</li>
+        <li>Hint: Draw slowly</li>
       </ol>
+      <div class="github-buttons">
+        <a class="github-button" href="https://github.com/sjdonado/handwritten-digits-recognition" data-icon="octicon-star" data-show-count="true" aria-label="Star sjdonado/handwritten-digits-recognition on GitHub">Star</a>
+        <a class="github-button" href="https://github.com/sjdonado/handwritten-digits-recognition/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork sjdonado/handwritten-digits-recognition on GitHub">Fork</a>
+      </div>
+      <h5>Model accuracy: 0.9872</h5>
+      <img src="assets/imgs/test_dataset_recognition.png" width="300" />
     </div>
   </body>
 </html>

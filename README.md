@@ -6,7 +6,7 @@
 
 ## Results
 <div align="center">
-    <a href="https://sjdonado.github.io/handwritten-digits-recognition" target="_blank">
-        <img src="imgs/results.png" width="100%" />
-    </a>
+  <a href="https://sjdonado.github.io/handwritten-digits-recognition" target="_blank">
+    <img src="assets/imgs/test_dataset_recognition.png" width="400" />
+  </a>
 </div>
