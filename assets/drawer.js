@@ -1,8 +1,23 @@
 const pixelSize = 16;
 
+function resizeCanvases () {
+  [].forEach.call(document.querySelectorAll('#paint'), function (
+    canvas
+  ) {
+    delete canvas.width
+    delete canvas.height
+
+    var rect = canvas.getBoundingClientRect()
+
+    canvas.width = rect.width
+    canvas.height = rect.height
+  })
+}
+
 function clearCanvas(context) {
   context.clearRect(0, 0, context.canvas.width, context.canvas.height);
   document.getElementById('prediction').innerText = '-';
+  resizeCanvases();
 }
 
 document.addEventListener('DOMContentLoaded', function(){ 
@@ -11,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const context = canvas.getContext('2d');
     clearCanvas(context);
   });
+  resizeCanvases();
 }, false);
 
 interact('#paint')
@@ -34,3 +50,6 @@ interact('#paint')
   .on('doubletap', function (event) {
     clearCanvas(event.target.getContext('2d'));
   })
+
+// interact.js can also add DOM event listeners
+interact(window).on('resize', resizeCanvases)

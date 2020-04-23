@@ -14,25 +14,22 @@ h1, h5, p {
   align-items: center;
 }
 
-.paint-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 #paint {
   border: solid 2px gray;
-  -ms-touch-action: none;
   touch-action: none;
   background-color: black;
   margin: 12px;
+  width: 200px;
+  height: 200px;
+  user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
 }
 
 #prediction {
   border: 1px solid black;
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   font-size: 48px;
   text-align: center;
 }
