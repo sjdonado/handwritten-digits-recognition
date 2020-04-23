@@ -2,6 +2,24 @@ body {
   font-family: Manrope;
 }
 
+h1, h5 {
+  text-align: center;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paint-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #paint {
   border: 1px solid #b9bfc9;
   margin-top: 25px;
@@ -10,5 +28,12 @@ body {
 }
 
 #prediction {
-  font-size: 32px;
+  font-size: 48px;
+  margin-left: 48px;
+}
+
+#clear {
+  width: 100%;
+  margin-top: 12px;
+  height: 24px;
 }

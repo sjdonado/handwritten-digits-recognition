@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Handwritten digits predictor</title>
+    <title>Handwritten digits recognition</title>
     <link href='http://fonts.googleapis.com/css?family=Manrope:400,600,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/index.css">
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
@@ -11,14 +11,16 @@
     <script src="assets/draw.js"></script>
   </head>
   <body>
-    <h1>Handwritten digits predictor</h1>
-    <h4>Model accuracy: 0.9864</h4>
+    <h1>Handwritten digits recognition</h1>
+    <h5>Test accuracy: 0.9872</h5>
     <div class="wrapper">
-      <div id="paint">
-        <canvas id="myCanvas"></canvas>
+      <div class="paint-container">
+        <div id="paint">
+          <canvas id="myCanvas"></canvas>
+        </div>
+        <button id="clear">Clear</button>
       </div>
-      <button id="clear">Clear</button>
+      <span id="prediction"></span>
     </div>
-    <span id="prediction"></span>
   </body>
 </html>
