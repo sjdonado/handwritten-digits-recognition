@@ -4,7 +4,7 @@
 * Html side: `npx live-server .`
 * Model side: Run in colab
 
-## Predictions
+## Results
 <div align="center">
-    <!-- <img src="imgs/0.png" width="300" /> -->
+    <img src="imgs/results.png" width="500" />
 </div>
