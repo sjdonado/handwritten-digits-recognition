@@ -1,0 +1,14 @@
+body {
+  font-family: Manrope;
+}
+
+#paint {
+  border: 1px solid #b9bfc9;
+  margin-top: 25px;
+  width: 200px;
+  height: 200px;
+}
+
+#prediction {
+  font-size: 32px;
+}
