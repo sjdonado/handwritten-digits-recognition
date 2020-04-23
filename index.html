@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handwritten digits recognition</title>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/index.css">
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
     <script src="assets/predictor.js"></script>
-    <script src="assets/draw.js"></script>
+    <script src="assets/drawer.js"></script>
   </head>
   <body>
     <h1>Handwritten digits recognition</h1>
     <h5>Test accuracy: 0.9872</h5>
     <div class="wrapper">
-      <div class="paint-container">
-        <div id="paint">
-          <canvas id="myCanvas"></canvas>
-        </div>
-        <button id="clear">Clear</button>
-      </div>
+      <canvas id="paint"></canvas>
       <span id="prediction">-</span>
+      <button id="clear-btn">Clear canvas</button>
     </div>
+    <ol>
+      <li>Hint: Double tap to clear the canvas</li>
+      <li>Hint: Draw slowly (on desktop)</li>
+    </ol>
   </body>
 </html>
